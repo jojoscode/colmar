@@ -158,21 +158,20 @@ li a {
 
 .read img {
   height: 148px;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem;
 }
 
 .info {
   justify-content: center;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 0 1.5rem 0 .5rem;
   text-align: left;
 }
 
  .blue {
+  font-weight: 200;
+  font-size: .8rem;
   color: cornflowerblue;
   padding-top: 1rem;
-  font-size: .8rem;
-  font-weight: 200;
 }
 
 /* Start Banner */
