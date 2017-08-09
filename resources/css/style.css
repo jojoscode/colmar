@@ -155,6 +155,7 @@ li a {
 .learn-text {
   justify-content: center;
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .button {
@@ -165,7 +166,6 @@ li a {
   font-weight: 200;
   text-align: center;
   padding: .8rem 0;
-  width: 80%;
 }
 
 /* This is for desktop */
@@ -190,7 +190,7 @@ li a {
   }
 
   .button {
-    width: 94%;
+    width: 100%;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
     background-color: rgb(80,80,80);
@@ -237,6 +237,10 @@ li a {
 @media only screen and (max-width: 849px) {
   .practice-left {
     display: none;
+  }
+
+  .flex-column {
+    flex: 1;
   }
 
   .right.readme1 {
@@ -332,7 +336,7 @@ li a {
 
   .row {
     padding: 0;
-    width: 94%;
+    width: 100%;
     margin: .5rem 1rem .5rem 1rem;
   }
 
