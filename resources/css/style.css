@@ -390,6 +390,10 @@ video ~ h3 {
   padding: 1.5rem 0 .5rem 0;
 }
 
+.info > a:hover {
+  color: rgba(80,80,80,.7);
+}
+
 /* This is for desktop and laptop */
 @media only screen and (min-width: 850px) {
 
