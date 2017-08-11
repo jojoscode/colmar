@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: /* "Montserrat", */ "Helvetica", sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   color: rgb(80,80,80);
   width: 100%;
 }
@@ -34,7 +34,7 @@ a h3 {
 }
 
 h4 {
-  font-weight: 200;
+  font-weight: 300;
   font-size: .8rem;
   line-height: 1.7;
   padding: .20rem 0;
@@ -117,15 +117,21 @@ li a {
   font-size: .9rem;
 }
 
+#desktop > li:hover,
+#logo > a:hover {
+  opacity: .6;
+}
+
+
 /* This is for desktop and laptop */
-@media only screen and (min-width: 766px) {
+@media only screen and (min-width: 769px) {
   #mobile {
     display: none;
   }
 }
 
 /* This is for tablet and mobile */
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 768px) {
   #logo {
     display: none;
   }
@@ -134,6 +140,10 @@ li a {
     align-items: center;
     font-size: .9rem;
     justify-content: space-around;
+  }
+
+  #mobile > li:hover {
+    opacity: .5;
   }
 }
 
@@ -161,6 +171,10 @@ li a {
   font-weight: 200;
   text-align: center;
   padding: .8rem 0;
+}
+
+#button:hover {
+  background-color: rgba(80,80,80,.7)
 }
 
 /* This is for desktop and laptop*/
@@ -228,6 +242,10 @@ li a {
   font-size: .8rem;
   color: cornflowerblue;
   padding-top: 1rem;
+}
+
+.blue:hover {
+  opacity: .6;
 }
 
 /* This is for desktop and laptop */
@@ -305,25 +323,29 @@ li a {
   flex-grow: 1;
 }
 
+.row-text:hover {
+  background-color: rgba(80,80,80,.1);
+}
+
 /* This is for desktop and laptop */
 @media only screen and (min-width: 850px) {
   .row {
     width: 25%;
+  }
+
+  .row-text > a:hover {
+    color: rgba(80,80,80,.7);
   }
 }
 
 /* This is for tablet and mobile */
 @media only screen and (max-width: 849px) {
   .centerhead {
-    padding: .5rem 0 2rem 0;
     border-top: 1px solid rgba(80,80,80,.2);
-  }
-
-  .centerhead.bkmdgray {
     background-color: rgba(80,80,80,0);
   }
 
-  .flex-container.rows {
+  .rows {
     display: block;
   }
 
@@ -342,8 +364,11 @@ li a {
     padding: 1rem 0 1rem 1rem;
   }
 
+  .row-text:hover {
+    background-color: rgba(80,80,80,.4);
+  }
 }
-/* Thesis Banner*/
+/* Thesis Banner */
 
 #minus {
   padding-bottom: 0;
@@ -372,10 +397,6 @@ video ~ h3 {
 
 /* This is for tablet and mobile */
 @media only screen and (max-width: 849px) {
-  .centerhead.bkltgray {
-    background-color: rgba(80,80,80,0);
-  }
-
   #readme2 {
     display: none;
   }
@@ -392,7 +413,7 @@ video ~ h3 {
 
 /* Footer */
 
-#toprule {
+footer {
   border-top: 1px solid rgba(80,80,80,.2);
   padding: .5rem 0 2.5rem 0;
 }
@@ -408,9 +429,13 @@ video ~ h3 {
   padding-right: 1.5rem;
 }
 
+#foot-right > li:hover {
+  opacity: .5;
+}
+
 /* This is for tablet and mobile */
-@media only screen and (max-width: 765px) {
-  #toprule {
+@media only screen and (max-width: 768px) {
+  footer {
     border-top: 1px solid rgba(80,80,80,0);
     padding: 0;
   }
