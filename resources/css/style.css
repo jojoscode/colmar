@@ -80,7 +80,7 @@ li a {
 
 /* Navigation */
 
-.nav {
+.navi {
   height: 64px;
   position: fixed;
   z-index: 1;
@@ -163,7 +163,7 @@ li a {
   padding-right: 1rem;
 }
 
-#button {
+button {
   margin-top: 2rem;
   background-color: rgb(80,80,80);
   color: white;
@@ -171,11 +171,17 @@ li a {
   font-weight: 200;
   text-align: center;
   padding: .8rem 0;
+  decoration: none;
 }
 
-#button:hover {
+button:hover {
   background-color: rgba(80,80,80,.7)
 }
+
+button:focus {
+  outline: 0;
+}
+
 
 /* This is for desktop and laptop*/
 @media only screen and (min-width: 850px) {
@@ -187,7 +193,7 @@ li a {
     text-align: left;
   }
 
-  #button {
+  button {
     width: 90%;
   }
 }
@@ -208,7 +214,7 @@ li a {
     margin-top: 2rem;
   }
 
-  #button {
+  button {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
     background-color: rgb(80,80,80);

@@ -6,13 +6,14 @@
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700" rel="stylesheet">
+    <link rel="icon" href="colaca.ico" type="image/x-icon">
   </head>
 
   <body>
 
     <!-- Desktop Navigation -->
 
-    <header class="flex-container nav">
+    <nav class="flex-container navi">
       <div id="logo">
         <a href="index.html"><img src="resources/images/ic-logo.svg" alt="Colmar Academy Logo"></a>
         <a href="index.html"><span id="black"> COLMAR</span><span id="gray">ACADEMY</span></a>
@@ -26,14 +27,15 @@
 
       <!-- Mobile Navigation -->
 
-      <ul class="flex-container nav" id="mobile">
+      <ul class="flex-container navi" id="mobile">
         <li><a href="index.html"><img src="resources/images/ic-logo.svg" alt="Colmar Academy Logo"></a></li>
         <li><a href="#"><img src="resources/images/ic-on-campus.svg" alt="desk graphic"></a></li>
         <li><a href="#"><img src="resources/images/ic-online.svg" alt="computer graphic"></a></li>
         <li><a href="#"><img src="resources/images/ic-login.svg" alt="person graphic"></a></li>
       </ul>
-    </header>
+    </nav>
 
+    <!-- Should there be a Main that surrounds from here to footer? -->
     <!-- Learn Banner -->
     <!-- id="learn" for z-index drop -->
 
@@ -44,7 +46,7 @@
       <div class="flex-column right" id="learn-text">
         <h1>Learn something new everyday</h1>
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <a href="#" id="button">Start here</a>
+        <button href="#">Start here</button>
       </div>
     </div>
 
@@ -180,7 +182,7 @@
 
     <footer class="flex-container bkltgray">
       <div class="flex-container" id="foot-left">
-        <h4>@ 2016 Colmar Academy. All rights reserved</h4>
+        <h4>&copy;2016 Colmar Academy. All rights reserved</h4>
       </div>
       <div>
         <ul class="flex-container" id="foot-right">
