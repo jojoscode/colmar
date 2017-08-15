@@ -132,7 +132,8 @@ li a {
 
 /* This is for tablet and mobile */
 @media only screen and (max-width: 768px) {
-  #logo {
+  #logo,
+  #desktop {
     display: none;
   }
 
@@ -175,7 +176,8 @@ button {
 }
 
 button:hover {
-  background-color: rgba(80,80,80,.7)
+  background-color: rgba(80,80,80,.7);
+  transition: all .5s ease-in-out;
 }
 
 button:focus {
@@ -252,6 +254,7 @@ button:focus {
 
 .blue:hover {
   opacity: .6;
+  transition: all .5s ease-in-out;
 }
 
 /* This is for desktop and laptop */
@@ -329,10 +332,6 @@ button:focus {
   flex-grow: 1;
 }
 
-.row-text:hover {
-  background-color: rgba(80,80,80,.1);
-}
-
 /* This is for desktop and laptop */
 @media only screen and (min-width: 850px) {
   .row {
@@ -372,6 +371,7 @@ button:focus {
 
   .row-text:hover {
     background-color: rgba(80,80,80,.4);
+    transition: all .5s ease-in-out;
   }
 }
 /* Thesis Banner */
@@ -382,10 +382,6 @@ button:focus {
 
 #minus > h2 {
   padding-bottom: .5rem;
-}
-
-video {
-  width: 100%;
 }
 
 #readme2 {
